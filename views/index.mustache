@@ -4,13 +4,26 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="/main.css">
 
   </head>
   <body>
 {{#users}}
-<div class="users">
+<div>
+  <div class="users">
   <img src="{{avatar}}">
+  <a href='/listings/{{id}}'>link here</a>
   <h3>{{name}}</h3>
+  {{#job}}
+  <h2>{{job}}</h2>
+  {{/job}}
+  {{^job}}
+  <p class="hire">Available for hire</p>
+  {{/job}}
+  <h4>{{company}}</h4>
+</div>
+</div>
+
 
 {{/users}}
 

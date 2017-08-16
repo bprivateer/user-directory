@@ -1,0 +1,22 @@
+body{
+  background: ;
+  display: flex;
+  flex-flow: row wrap;
+  font-family:sans-serif;
+}
+
+div {
+  display: inline-block;
+  margin: auto;
+
+}
+
+
+.users {
+  border: #666 solid 1px;
+  display: flex;
+  flex-flow: column wrap;
+  margin: 20px auto;
+  padding: 10px;
+  text-align: center;
+}

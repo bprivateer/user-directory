@@ -9,7 +9,7 @@ app.set('views', './views');
 app.set('view engine', 'mustache');
 
 
-// express.app.use('./index.js', express.static(path.join(__dirname, 'files')))
+app.use(express.static("./public"))
 
 //
 // app.get("/", function( req, res){
@@ -22,10 +22,22 @@ app.get('/', function (req, res){
   res.render("index", data)
 });
 
-// app.get("/data", function( req, res){
-//   res.render(data)
-// })
+app.get('/listings/:id', function (req, res){
+  console.log(req.params.id)
+  console.log(req.params.id, {user})
+
+  // res.render(req.params.id);
+  res.send("yay")
+});
+
+app.get("/data", function( req, res){
+  res.render(data)
+})
 
 app.listen(3000, function(){
 console.log("Success");
 });
+
+
+// -- /index/:id --
+// <a href=""
