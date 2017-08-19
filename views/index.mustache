@@ -8,11 +8,13 @@
 
   </head>
   <body>
+    <h1>Pick your robot</h1>
 {{#users}}
-<div>
+<span class="row">
+  <a href='/hello/{{id}}'>
   <div class="users">
   <img src="{{avatar}}">
-  <a href='/listings/{{id}}'>link here</a>
+  <!-- <a href='/hello/{{id}}'></a> -->
   <h3>{{name}}</h3>
   {{#job}}
   <h2>{{job}}</h2>
@@ -22,11 +24,11 @@
   {{/job}}
   <h4>{{company}}</h4>
 </div>
-</div>
+
 
 
 {{/users}}
-
-
+</a>
+</span>
   </body>
 </html>

@@ -13,15 +13,17 @@ app.set('view engine', 'mustache');
 
 app.use(express.static("./public"))
 //
-// app.get("/", function( req, res){
-//   res.render()
-// } );
+
 app.get('/', function (req, res){
   res.render("index", data)
 });
 
-app.get('/listings/:id', function (req, res){
-let user = data.users[req.params.id -1]
+app.get('/hello/:id', function (req, res){
+  let id = req.params.id;
+  // let user = data.users[req.params.id -1]
+  let user = data.users.find(function(user){
+    return user.id == id;
+  });
 
   console.log(req.params.id)
   console.log(user.username)

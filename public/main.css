@@ -1,13 +1,32 @@
 body{
   background: ;
-  display: flex;
-  flex-flow: row wrap;
   font-family:sans-serif;
+  text-align: center;
 }
 
-div {
+/*div {
+  border: black solid 1px;
   display: inline-block;
   margin: auto;
+
+}*/
+
+h3 {
+  color: skyblue;
+  height: 2em;
+}
+.hire {
+  color:red;
+  height: 1em;
+
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px 10px;
+  padding: 10px;
 
 }
 
@@ -16,7 +35,29 @@ div {
   border: #666 solid 1px;
   display: flex;
   flex-flow: column wrap;
-  margin: 20px auto;
+  margin: 20px 10px;
   padding: 10px;
   text-align: center;
+}
+
+#borderimg {
+  border-radius: 10%;
+
+}
+.first {
+  display: flex;
+  fle
+
+}
+
+.second {
+
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  border: black solid 1px;
+  justify-content: center;
+  margin: 20px auto;
 }
