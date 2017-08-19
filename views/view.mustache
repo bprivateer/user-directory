@@ -6,24 +6,30 @@
     <title>{{name}}</title>
   </head>
   <body>
-    <div class="user">
+    <div class="users">
         <img id="avatar" src="{{avatar}}">
-      <div class="first">
-      <ul>
-        <li>{{name}}</li>
-        <li>{{email}}</li>
-      </ul>
+        <div class="container">
+        <h1>{{name}}</h1>
+        <div class="box">
+        <div class="first">
+
+         City:{{address.city}}<br>
+      Country:{{address.country}}<br>
+        <div id="email">{{email}}</div>
     </div>
-    <div class="second">
-      <ul>
-        <li>City:{{address.city}}</li>
-        <li>Country:{{address.country}}</li>
-      </ul>
-      <ul>
-        <li>Education:{{university}}</li>
-        <li>{{#job}}{{job}}{{/job}}
-        {{^job}}<p class="hire">Avaliable for hire</p>{{/job}}</li>
-      </ul>
+
+        <div class="second">
+
+      Education:{{university}}
+                {{#job}}
+                {{job}}
+                {{/job}}
+        <div class="hire">
+                {{^job}}Avaliable for hire
+                {{/job}}
+        </div>
+    </div>
+  </div>
     </div>
 
 

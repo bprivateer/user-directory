@@ -30,34 +30,63 @@ h3 {
 
 }
 
-
-.users {
-  border: #666 solid 1px;
+a {
   display: flex;
-  flex-flow: column wrap;
-  margin: 20px 10px;
-  padding: 10px;
-  text-align: center;
-}
-
-#borderimg {
-  border-radius: 10%;
-
-}
-.first {
-  display: flex;
-  fle
-
-}
-
-.second {
-
+  flex-direction: column;
+  text-decoration: none;
+  width: 25%;
 }
 
 .user {
   display: flex;
   flex-direction: column;
+  margin: 10px auto;
+}
+
+.users {
+  /*border: #666 solid 1px;*/
+  display: flex;
+  flex-flow: row wrap;
+  margin: 50px 10px;
+  padding: 10px;
+  text-align: center;
+}
+.box {
+  display: flex;
+  flex-direction: row;
+}
+
+/*#email {
+  border-right: solid black 1px;
+  padding: 10px;
+}*/
+
+#avatar {
+  border-radius: 50%;
   border: black solid 1px;
+  float: left;
+  margin: 10px;
+
+}
+.first {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-right: 1px solid black;
+  padding: 10px;
+
+}
+
+.second {
+  margin: 10px;
+  al
+
+}
+
+.user {
+  border: black solid 1px;
+  display: flex;
   justify-content: center;
-  margin: 20px auto;
+  margin: 20px;
+  padding: 10px;
 }
